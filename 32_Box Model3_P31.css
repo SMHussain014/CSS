@@ -1,0 +1,37 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-image:url("img/colour_bubble.jpg");
+    background-size:cover;
+}
+.wrapper{
+    width:500px;
+    margin:50px auto;
+}
+.main{
+    width:100%;
+    float:left;
+    border-style:solid;
+    border-width:3px; 
+    border-color:#f00;
+}
+.main h1{
+    text-align:center;
+    color:blue;
+    margin-top:20px;
+}
+.main img{
+    width:450px;
+    float:left;
+    margin:20px 20px 0px 20px;
+}
+.art{
+    width:420px; 
+    margin:20px;
+    float:left;
+    color:green;
+    border:3px solid blue;
+    padding:15px;
+}

@@ -1,0 +1,60 @@
+Flex Property or Flex Box
+It gives our web-site a flexible layout without the use of 'float' and 
+'position property'.
+In fact, it aligns/ arranges inside boxes within a single outside box.
+The outer box, acts like the parent, called 'flex-container' or 'container'.
+The inner boxes, act like the children, called 'flex-child-items' or 'child-items'.
+The x-axis or Main-axis is in the horizontal direction. The size of main side
+is called "Main-Size" and have two points, i.e. Main Start & Main End, from
+left to right.
+The y-axis or Cross-axis is in the vertical direction. The size of cross side
+is called "Cross-Size" and have two points, i.e. Cross-Start & Cross End, from 
+down to top.
+
+Properties of Flex-Container and Flex-Child-Items:
+Both has separate but certain properties;
+
+Display Property:
+It is used to make the layout of a web-page flexible, like display: flex;
+
+Flex-Direction (For flex-container):
+It has four values, i.e. row (default), column, reverse row, reverse column.
+
+Flex-Wrap (For flex-container):
+It has three values, i.e. nowrap (default), wrap, wrap-reverse
+
+Flex-flow (For flex-container):
+In this property, we can combine flex-direction and flex-wrap properties, 
+like flex-flow: wrap row;
+
+Gap Property (For flex-container):
+It produces gap between flex-children and usually used in place of margin property, like 
+gap:10px; It has two directions, i.e. row-gap and column-gap.
+
+Justify-Content (For flex-container):
+It works with main or horizontal axis and controls the child's alignment, i.e. the inner boxes 
+and has following values, i.e. space-between, space-around, space-evenly, flex-start, flex-end, 
+center etc. If we use this property, there is no need to use gap property.
+
+Align-Item (For flex-container)
+It works with cross or vertical axis like justify-content property. It has the following values
+center, flex-start, flex-end, baseline, stretch (default).
+
+Align-Content (For flex-container)
+It controls the distance between two rows in vertical direction. Its values are same as of 
+justify-content has have.
+
+Order (For flex-child-items):
+It controls 'order' of flex-child-items. The default order is 0, as you keep on increasing 
+order number, the child-item will go at the end.
+
+Flex-Grow & Flex-Shrink(For flex-child-items)
+The flex-grow controls growth of flex-child-item at double speed as compared to normal growth 
+rate of the rest child-items. The flex-shrink functions in opposite way. The by default value 
+of flex-grow is 0 and by default value of flex-shrink is 1. 
+
+Flex-Basis (For flex-child-items)
+It provides a particular width to a specified child-item on main-axis.
+
+Align-Self (For flex-child-items)
+It spread in vertical direction as per defined value.

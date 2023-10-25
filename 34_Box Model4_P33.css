@@ -1,0 +1,20 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-image:url("img/colour_bubble.jpg");
+    background-size:cover;
+}
+.main{
+    min-width:320px;
+    max-width:900px;
+    margin:25px auto;
+}
+.main img{
+    width:100%;
+}
+.art{
+    width:100%; 
+    padding:10px;
+}

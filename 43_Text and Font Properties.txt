@@ -1,0 +1,36 @@
+Text Properties:
+The following are the text properties:
+letter-spacing, word-spacing, text-align, text-indent, text-transform,
+text-decoration-line (none, line-through, overline, underline), 
+text-decoration-color, text-decoration-style (solid, dotted, dashed,
+double, wavy), text-decoration-thickness (take in px), text-shadow etc.
+
+Font-Family Property:
+Generic Family (verdana, arial, gotham, halvetica) anf Font Family (a single
+family)
+
+Font-size Property:
+It controls size of the font. its units are px, em, % etc.
+The default size is medium, i.e. 16px. 
+Here, em and % (it is hundred of em) show size in ratio to the default. 
+
+Font-Style:
+It has three values, i.e. normal, italic, oblique
+
+Font-weight:
+It has four values, i.e. lighter, normal, bold, bolder
+
+Font-variant:
+It has two values. i.e. normal and small-caps
+
+Line-height:
+It is normally equal to font size.  To enhance line spacing it must be 
+greater than font size.
+All Font Properties can be written in a single line, like
+font: style, variant, weight, size/height, family;
+
+Google Font:
+We can also use Google Font from google.
+
+Awesome/icon (off Net) Font and CDN (on Net) Font
+we can use icon Front from google.

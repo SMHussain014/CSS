@@ -1,0 +1,28 @@
+body{
+    background-image:url("img/colour_bubble.jpg");
+    background-size:cover;
+}
+table{
+    width:400px;
+    height:350px;
+    border-width:5px;
+    border-style:outset;
+    border-color:#f00;
+    background:#00f;
+    color:#fff;
+    /* border-collapse:collapse; */
+    border-spacing: 10px 20px;
+    vertical-align: top;
+    empty-cells:hide;
+    padding: 10px;
+}
+caption{
+    caption-side: bottom;
+}
+tr:nth-child(odd){
+    background: #f00;
+    color:yellow;
+}
+tr:hover{
+background-color: black;
+}

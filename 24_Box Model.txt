@@ -1,0 +1,93 @@
+Box Model
+It consists of four parts, namely Content Box, Padding, Border and Margin.
+Content Box is the most inner part of Box Model and contains our content.
+Padding is the area between content and the border.
+The third thing is border itself.
+Margin is the space outside border around all four sides.
+The size of a box is equal to the size of content box, both sides of padding & border.
+
+Border Properties
+The following is the list of some border properties:
+(i) Border-style
+(ii) Border-width
+(iii) Border-color
+(iv) Border-radius
+(v) Border-image
+
+Border-style
+Border-style refers to the types of border, i.e. solid, dotted, dashed, double, groove, ridge, 
+inset, outset, none, hidden etc. 
+If two values are provided for Border-style, top/bottom will be horizontal and left/right 
+will be vertical.
+Note that border-style can be applied at any side, like border-top-style:dashed.
+If four values are provided for border-style, all sides will be different from each and other.
+Border-style works in clock-wise, starting from top, right, bottom and left.
+
+Border-width
+Border-width refers to the width of border, i.e. thin(1px), medium(2px), thick(4px) or any value in pixels.
+If one value is provided for width, its all four sides will be equal.
+If one value with auto is provide, top/bottom will take width and auto will place text or image in center position.
+If two values are provided for width, first will be horizontal and second will be vertical.
+If four values are provided for width, all sides will be different from each and other.
+It has also four directions, starting from top, right, bottom and left.
+
+Border-color
+Border-color refers to the color of border. Like width, color may also be different.
+Heading and paragraph may also have border. 
+
+Border-radius
+Border-radius refers to rounding off the four corners of border. It works crossed from top left to bottom right.
+if four values are taken, then it works clock-wise. It can also be used in percentage rather than pixels.If 50% 
+value is used, it will create an oval shape if width and height of box are different, other-wise a circle.
+
+Border-image
+An image can also be applied onto a border of a box.
+It has the following properties, like width, outset, repeat, source, slice.
+To insert a ready-made border, use property 'border-image-source:url(complete path of the file);'. 
+But this property inserts the border at the four corners of a box. 
+To adjust the border around all sides of a box, first take edge's size with the use of select 
+option from MS Paint, and then use property like 'border-image-slice:30px;'.
+To have equal-distance of border's design around the box, use property 'border-image-repeat:round;'. 
+We have already known that it has four values namely repeat, round, space and stretch. 
+Its default value is stretch.
+To create some distance of a border to its box, use property 'border-image-outset:30px;'.
+To enhance border width, use property 'border-image-width:40px;'.
+An image may also be inserted as border, yet its size should be at least same as of the box.
+We can also make a border of our choice by using 'Border Image Generator' website, absolutely free of cost.
+
+Box-shadow Property
+This property is used to create the shadow of a box. To use it, remove border first.
+It can be used like that 'box-shadow: values in px ;
+It has five values, i.e. horizontal, vertical, ballure, spread, color, 
+
+Margin Property
+Margin is a group property and used widely in a web-page. 
+To have margin from browser windows, we use * and within central brackets taken margin and 
+padding as zero, so to maintain default margin.
+If one value is used for margin, it will be equal to the all four sides.
+If two values are used like 'margin:40px auto;', its mean top & bottom margin is 40px and 
+left & right margin is auto.
+If four values are used, it start from top, right, bottom and left.
+We have also side-wise margin, like margin-top, margin-right, margin-bottom, margin-left.
+
+Padding Property
+Padding refers to space between border and text/content. It has also four directions, starting 
+from top, right, bottom and left. We should use padding property as least as possible.
+
+width property
+If one value is provided for width, its all four sides will be equal.
+If one value with auto is provide, top/bottom will take width and auto will place text or image in center position.
+If two values are provided for width, first will be top/bottom and second will be left/right.
+If four values are provided for width, all sides will be different from each and other.
+It has also four directions, starting from top, right, bottom and left.
+
+Width - min and max.
+In HTML5, we have already studied about responsive pictures, where we provided different sizes of devices and change of 
+pictures as per fixed criteria. This was done by using picture tag. 
+However, in CSS, this will be done by using width - min and max property.
+To get the responsive size, press f-12 from your keyboard and also press button 
+toggle device toolbar.
+You will see the following sizes: Mobile Small 320px, Mobile Medium 375px, Mobile Large 425px, 
+Tablet 768px, Laptop 1024px
+To have responsive size, we will use width in percentage or use responsive sizes.
+How to create a responsive web-site will be discussed later on.

@@ -1,0 +1,21 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.wrapper{
+    width:300px;
+    margin:50px auto 0px auto;
+}
+.main{
+    width:300px;
+    float:left;
+}
+.art{
+    width:280px; 
+    height: 225px;
+    float:left;
+    padding:10px;
+    text-align: justify;
+    outline: 2px solid red;
+    outline-offset: -8px;
+}

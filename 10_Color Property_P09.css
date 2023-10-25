@@ -1,0 +1,16 @@
+body{
+    background-color:skyblue;
+}
+h1{
+    color:red;
+    background:yellow;
+    border:5px solid green;
+}
+h2{
+    color:white;
+    background:blue;
+    border:5px solid red;
+}
+p{
+    color:blue;
+}

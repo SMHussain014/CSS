@@ -1,0 +1,81 @@
+Grid Property
+It gives our web-site a flexible layout like 'flex' property.  As you know, flex 
+works on a layout linearly, i.e. only in one dimension. 
+If we talk about two-dimensional layout, 'Grid Property' comes into the field.
+
+In fact, it aligns inner boxes present within a single outer box in rows and
+columns.
+Outer box, acts like the parent, called 'grid-container' or 'container'.
+Inner boxes, act like the children, called 'grid-child-items' or 'child-items'.
+Main-axis is in the horizontal direction and Cross-axis is in the vertical 
+direction. Their size is called 'main size' and 'cross size' respectively.
+
+To apply CSS, we need a html file which may be created in just two simple steps
+in VSC, like
+1.  type '!' and press enter; and
+2.  type '.container>.box#box-#{<h3>box item-#</h3><p>Hello! item-#</p>}
+and press enter.
+
+Properties of Grid-Container and Grid-Child-Items:
+Both has separate but certain properties;
+
+Display Property (For grid-container):
+It is used to make the layout of a web-page flexible, like display: grid;
+
+Gap Property (For grid-container):
+It produces gap between grid-children and usually used in place of margin property, like 
+gap:10px; It has two directions, i.e. row-gap and column-gap.
+
+Grid-Template-Columns (For grid-container):
+It defines width of columns, i.e. grid-template-columns: 100px, 200px, 300px;.
+The number of values, specifies number of columns. 
+In place of pixels, relative values, like % and vw may be used which will be responsive. Whereas
+px are absolute values.
+Other-way is the use of fr, this will controls the width of a column with respect to screen. In 
+place of fr, auto may also be used. You may also write 'repeat(4, fr)' to create four columns or
+'repeat(autofill, fr)' which will be adjusted as per screen's width.
+
+Grid-Template-Rows (For grid-container):
+It defines height of rows, like grid-template-rows: 200px 100px;. The remaining rows will take 
+the height as per padding of child-boxes or fix the same by using 'grid-auto-rows:150px;', as 
+the case may be.
+
+Justify-Content (For grid-container):
+It works with main axis and controls the child boxes' alignment and has following values, 
+i.e. space-between, space-around, space-evenly, start (default), end, center. If we use this 
+property, 'grid-template-columns' must be set in pixels.
+
+Align-Content (For grid-container)
+It controls the distance between two rows in vertical direction. It has the following values
+center, start, end, baseline, stretch (default), space-between, space-around, space-evenly. To 
+use this property effectively, we have to provide height to our container. 
+
+Align-Item (For grid-container)
+To use this property, we should avoid the use of 'align-content'. It works with cross axis but it
+adjust itself as per its child-box space. In other words, align-content applies to the whole grid,
+yet align-item operates on child-boxes. It has the following values center, start, end, baseline.
+
+Justify-Self (For grid-child)
+It works in horizontal direction. It has following values, i.e. start, end, center, 
+stretch (default).
+
+Align-Self (For grid-child)
+It works in vertical direction. It has following values, i.e. start, end, center, 
+stretch (default).
+
+Grid-Column and Grid-Row (For grid-child)
+These are used to merge a column or row as per your requirements, like grid-column: 1 / 3; or
+grid-column: 1 / span 2; or grid-column: 1/ -1;, as the case may be.
+Remember that column refer to the line separating a box to other and span is the area between 
+two lines of a box.
+
+Grid-Area (For grid-child):
+With this property, we can operate grid-column and grid-row at the same time, like 
+grid-area: 1 / 1 / 3 / 3;
+
+Grid-Template-Area (For grid-container)
+It can be used in place of 'grid-template-columns' like that
+grid-template-area: "hr hr hr hr"
+                    "sbr main main main"
+                    "sbr main main main"
+                    "ft ft ft ft";

@@ -1,0 +1,33 @@
+body{
+    background-image:url("img/colour_bubble.jpg");
+    background-size:cover;
+}
+.box{
+    width:400px;
+    height:300px;
+    margin:50px auto;
+    border:20px dotted #000; 
+    border-radius:20px;
+    background-image:url("img/cartoon.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-origin:content-box;
+    float:left;
+}
+.box h1, p{
+    margin:20px, 40px;
+    text-shadow:2px, 2px, 2px, #000;
+}
+h1{
+    color:red;
+    background:yellow;
+    border:5px solid green;
+}
+h2{
+    color:white;
+    background:blue;
+    border:5px solid red;
+}
+p{
+    color:blue;
+}

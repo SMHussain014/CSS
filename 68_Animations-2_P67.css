@@ -1,0 +1,91 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0px;
+}
+.sky, .grass, .road{
+    position: relative;
+}
+.sky{
+    height: 40%;
+    background: skyblue;
+}
+.grass{
+    height: 30%;
+    background: seagreen;
+}
+.road{
+    height: 30%;
+    background: dimgray;
+    box-sizing: border-box;
+    border-top: 10px solid gray;
+    border-bottom: 10px solid gray;
+    width: 100%;
+}
+img{
+    width: 80px;
+    height: 80px;
+}
+.lines{
+    box-sizing: border-box;
+    border: 5px dashed white;
+    height: 0%;
+    width: 100%;
+    position: absolute;
+    top: 50%
+}
+.clouds{
+    position: absolute;
+}
+/* object to animate */
+.cartoon{
+    position: absolute;
+    top: -5%;
+    left: 0%;
+    /* animation-name: drive;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; */
+    animation: drive 5s linear infinite, jump 0.5s 1.5s ease infinite;
+}
+.dog{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    animation-name: drive;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    /* animation-delay: 2s; */
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+}
+.clouds:nth-child(1){
+    width: 200px;
+    top: 80px;
+    opacity: 0.5;
+    animation: wind 80s linear infinite reverse;
+}
+.clouds:nth-child(2){
+    width: 300px;
+    top: 0px;
+    animation: wind 60s linear infinite reverse;
+}
+/* Keyframe */
+@keyframes drive {
+    from{transform: translateX(-150px);}
+    to{transform: translateX(1450px);}
+}
+@keyframes wind {
+    from{left: -300px;}
+    to{left: 100%;}
+}
+@keyframes jump {
+    0%{top: -5%}
+    50%{top: -75%}
+    100%{top:-5%}
+    
+}

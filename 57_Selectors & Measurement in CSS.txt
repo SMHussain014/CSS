@@ -1,0 +1,137 @@
+To handle HTML tags in CSS, we need selectors which have five types.
+
+What is a selector?
+Selector is the name given to a HTML element so as to use in CSS.
+
+Types of Selectors:
+(i)     Simple Selectors
+(ii)    Combinator selectors
+(iii)   Attribute Selectors
+(iv)    Pseudo-Class Selectors
+(v)     Pseudo-Element Selectors
+
+Simple Selectors:
+These are of five types:
+(i)     Element Selector, like h1, p, div, article etc.
+(ii)    ID selector, like <h1 id="heading"> etc. In CSS, we call them by using #.
+(iii)   Class Selector, like <p class="box"> etc. In CSS, we call them by using dot sign.
+(iv)    Universal Selector, like *{ }, it is used at the start of CSS file.
+(v)     Grouping Selector, like h1, h2, h3, p{ }, it function like a group.
+
+Combinator selectors:
+These are of four types:
+Let we have, 
+<div class="box">
+<p>Paragraph One</p>
+<p>Paragraph Two</p>
+<div class="inbox">
+<p>Paragraph Three</p>
+<p>Paragraph Four</p>
+</div>
+</div>
+(i)    Descendant Selector [space], like div.box[space] p{ }, apply on all.
+(ii)   Child selector [>], like div.box>p{ }, apply only child and not on inner.
+Also, let we have,
+<h1>
+<p>Paragraph One</p>
+<p>Paragraph Two</p>
+<p>Paragraph Three</p>
+<p>Paragraph Four</p>
+</h1>
+(iii)   Adjacent Sibling Selector [+], like h1+p, apply only first para of h1.
+(iv)    General Sibling Selector [~], like h1~p, apply on all. 
+
+Attribute Selectors:
+It is used like input[type="text"]{ }, i.e. on attributes.
+
+Pseudo-Class Selectors:
+Let we have, 
+<div class="box">
+<p>Paragraph One</p>
+<p>Paragraph Two</p>
+<p>Paragraph Three</p>
+<p>Paragraph Four</p>
+</div>
+It is used like a:hover{ } and div.box p: first-child{ }. It has four types in it.
+
+1-Details: It has four parts;
+(i)     :Link like a:link{ color: green; }
+(ii)    :visited like a:visited{ color: pink; }
+(iii)   :active like a:active{ color: blue; }
+(iv)    :hover like a:hover{ color: red; }
+
+2-Details: The following are the common class selectors;
+Let we have,
+<div class="container">
+<div class="box-1">
+<h1>Heading of Box-1</h1>
+<p>Paragraph-1 of Box-1</p>
+<p>Paragraph-2 of Box-1</p>
+<p>Paragraph-3 of Box-1</p>
+<p>Paragraph-4 of Box-1</p>
+</div>
+<p>Paragraph-1 of Container</p>
+<p>Paragraph-2 of Container</p>
+<div class="box-2">
+<p>Paragraph-1 of Box-2</p>
+<p>Paragraph-2 of Box-2</p>
+<p>Paragraph-3 of Box-2</p>
+<p>Paragraph-4 of Box-2</p>
+</div>
+</div>
+(i)     first-child like div.container p: first-child{color:red;}
+(ii)    last-child like div.container p: last-child{color:red;}
+(iii)   first-of-type like div.container p: first-of-type{color:red;}
+(iv)    last-of-type like div.container p: last-of-type{color:red;}
+(v)     nth-child() like div.container p: nth-child(1){color:red;} ('even' and 'odd' be given)
+(vi)    nth-last-child() like div.container p: nth-last-child(1){color:red;}
+(vii)   nth-of-type() like div.container p: nth-of-type(1){color:red;}
+(viii)  nth-last-of-type() like div.container p: nth-last-of-type(1){color:red;}
+(ix)    only-of-type like div.container :only-of-type{color:red;}
+(x)     only-child like div.container :only-child{color:red;}
+(xi)    empty like div.container :empty{color:red;background:blue;width:100px;height:50px}
+(xii)   not like div.box-1 :not(p){color:red;}
+
+3-: The following are the form class selectors
+(i)     input:focus{border:4px solid green} (It does not work on radio button and check box)
+(ii)    input[type=radio]:checked{box-shadow:0 0 0 4px green}
+(iii)   input[type=checkbox]:checked{box-shadow:0 0 0 4px blue}
+(iv)    input[type=text]:disabled{border:4px solid red} (enabled can also be used)
+(v)     input:required{border:4px solid red} (optional can also be used)
+(vi)    input:out-of-range{border:4px solid red} (in-range can also be used [only numbers])
+(vii)   input:read-only{border:4px solid sky-blue} (read-write can also be used)
+(viii)  input:valid{border:4px solid green} (invalid can also be used)
+(ix)    input:default{box-shadow:0 0 0 4px blue}
+
+4-Details: The variable or root class selector can be used, like :root{--colorone:pink}
+(used in place of color-value like var:(--colorone))
+
+Pseudo-Element Selectors
+Let we have,
+<p>This is Computer Class.</p>
+It is used like p::first-letter{ }.
+::after, ::before, ::first-letter, ::first-line, ::selection, ::placeholder etc.
+
+Details: 
+(i)     p::before{content:"Start";color:red;background:yellow;display:block;}
+(ii)    p::after{content:"End";color:red;background:yellow;display:block;}
+(iii)   p:hover::before{content:"Start";color:red;background:yellow;display:block;}
+(iv)    p:hover::after{content:"End";color:red;background:yellow;display:block;}
+        (::first-letter and ::first-line can be used in the same way)
+(v)     p::selection{color:white; background:red;}
+(vi)    ::placeholder{color:blue;} (Only apply in forms)
+
+Measurements in CSS
+px (pixsal), % (percentage), em, rem, vw (viewport width), vh (viewport height), 
+vmax (viewport maximum), vmin (viewport minimum)
+
+Absolute Units - fixed values
+px, mm, cm (by default browser font-size is 16px)
+if these values are taken in %age, it becomes responsive.
+
+Relative Units - flexible values (usually in relation to two divisions)
+em, rem - used in taking Font-Size (if we have (say font-size= 10px), then 'em' is its time.)
+Like 10px = 1em; 20px = 2em etc.
+Like rem takes browsers default font-size or take from HTML root, if provided.
+vw, vh - it depends upon the browsers' screen.
+vmax, vmin - It firstly depends upon the browser and secondly on one fixed side. 

@@ -1,0 +1,43 @@
+As you know, we have already learned about background-image: url() property.
+In this lecture, we are about to learn:
+    (i) linear-gradient()
+    (ii) repeating-linear-gradient()
+    (iii) radial-gradient()
+    (iv) repeating-radial-gradient()
+    (v) Conic-gradient()
+
+Background-image: linear-gradient() and repeating-linear-gradient()
+The smooth combination of two or more colors is called gradient. 
+It functions on background-image property.
+Linear Gradient produces horizontal design. Repeating Linear Gradient produces diagonal design.
+Its default position is top to bottom. Its position can be changed, i.e from bottom to top, like 
+background-image: linear-gradient(to top, red, green) 
+Its mean, we have to provide only end position or direction. The allowed positions are top, bottom,
+left, right, bottom right, top right, bottom left, top left etc.
+It can be applied in degrees also, like background-image: linear-gradient(45 deg, red, green) 
+Multiple colors and their percentage can also be given. 'rgba can also be applied, like
+background-image: linear-gradient(to left, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0)) 
+We can repeat these colors, like background-image: repeating linear-gradient(to left, red, green 10%, yellow 20%) 
+
+Background-image: radial-gradient() and repeating-radial-gradient()
+These produces circular shaped with colors. The color flow is from centre to outwards direction.
+Its default shape is oval, other shapes like circle, ellipse etc may be given, e.g.
+background-image: radial-gradient(circle, red 40%, yellow 30%, green 30%) 
+Like linear-gradient, the shape's positions can be applied, e.g.
+background-image: radial-gradient(circle at left, red 40%, yellow 30%, green 30%) 
+It can be used in  percentage, like
+background-image: radial-gradient(circle at 10%, red 40%, yellow 30%, green 30%) 
+Transparent color can also be used, like
+background-image: radial-gradient(ellipse at left, red, transparent) 
+Its position can be adjusted with the help of attributes, like closest-side, farthest-side, closest-corner and farthest-corner.
+background-image: radial-gradient(closest-side at 30%. red, blue, green) 
+We can repeat these colors, like background-image: repeating radial-gradient(red, green 10%, yellow 20%) 
+
+Background-image: conic-gradient()
+It is similar to radial-gradient. It can be applied at any angle and at any percentage, like 
+background-image: conic-gradient(from 45 deg, red, blue, green) 
+If opening and closing colors are same no visible line can be seen.
+The centre of conic can also be changed, like
+background-image: conic-gradient(at 20% 45%, red, blue, green) 
+It can be repeated like that background-image: repeating conic-gradient(red 10 deg, blue 20 deg, green 10 deg) 
+If we fixed background-size of x and y, we will have beautiful checks like shape.

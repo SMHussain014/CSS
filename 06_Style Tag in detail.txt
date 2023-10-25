@@ -1,0 +1,9 @@
+We have learned that 'style' tag has two types, namely text and media.
+Attribute 'text' controls the text's color, text's background, text's border and 
+page background's color.
+It is written within opening 'style' tag; like <style type="text/css">
+Attribute 'media' controls screen and print options of a webpage.
+It is written within opening 'style' tag for screen; like 
+<style type="text/CSS" media="screen and (max-width:900px)">
+It is written within opening 'style' tag for print; like 
+<style type="text/CSS" media="print">

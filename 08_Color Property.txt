@@ -1,0 +1,21 @@
+Color Property:
+It has four usages:
+    (i) color: it can be used to apply color onto 'text' only
+    (ii) background: it can be used to apply background color onto 'heading' and 'paragraph'
+    (iii) border: it can be used to apply border color onto 'heading' and 'paragraph'
+    (iv) background-color: it can be used to apply page background color and used in 'body' tag
+Types of Color Property w.r.t. their usage
+    (a) By Color Name
+    (b) BY Hexadecimal (Search from Google: Hexadecimal Color Picker)
+        Write '#' before color code.  
+        Always use six or three digits code.
+        First 2: color 'Red', Middle 2: color 'Green', Last 2: color 'Blue'
+        Color Range: 0-9 & a-f; Start from 'Black' color and Ends with 'White' color
+    (c) By RGB
+        Write 'RGB(000, 000, 000)'
+        Color Range: 1-255; Start from 'Black' color and Ends with 'White' color
+    (d) By RGBA
+        Write 'RGBA(000, 000, 000, 0.3)'
+        Color Range: 1-255; Start from 'Black' color and Ends with 'White' color
+        Transparency Range: 0-1.0
+    (e) By HSLA

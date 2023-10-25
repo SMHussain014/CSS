@@ -1,0 +1,44 @@
+How to create Animations in CSS:
+Before proceeding further, we have to learn some advanced properties;
+
+Transform Property:
+transform: translate();
+This moves an object in a linear line in horizontal, vertical directions. Its values are 
+translate, translateX, translateY, translateZ etc. The translate function takes values in pixels. 
+translateX: If value is positive, from left to right, if negative, from right to left.
+translateY: If value is positive, from top to bottom, if negative, from bottom to top.
+Translate: It can take two values at a time.
+
+transform: scale();
+This can stretch or shrink an object. Its values are scaleX, scaleY, scaleZ, scale. The scale 
+function takes value in numbers. Its default value is 1.
+
+transform: rotate();
+This can rotate an object. Its values are rotateX, rotateY, rotateZ, rotate. The rotate function
+takes value in degree.
+
+Transition Property:
+This provide time interval for the event happening. It may be used with transform.  It not only 
+provide time effect but also can be applied to a specific object, like transition: 
+background 1s (object with time), transform 0.5s 1s linear (action-time and delay-time);
+
+Note that rate of change may be controlled by using ease (default), linear (constant), 
+ease-in (start slow and takes pace), ease-out (start fast and slows down).
+
+Making Key-frames:
+Before making a key-frame, we have to create an environment by using 'position: relative'. After
+setting that we have to create a division anywhere in that environment. This division will be 
+design as 'position: absolute'. Now, take an object, required to be animated, and set it as
+'position: absolute' with the selected division.
+At this stage, we are ready to make a key-frame, like @keyframe frame_name{mode of animation};
+In the animated object corner, set 'animation-name' (frame_name) and animation-duration (time).
+The basic animation is here to br displayed.
+
+The 'animation-fill-mode' tells us about the behavior of animated object. Its has four values, 
+i.e. none (default), forwards, backwards, both. The 'animation-delay' waits the start of 
+animating till the desired time.
+The 'animation-iteration-count: infinite;' repeats the occurrence till the dooms day.
+The 'animation-direction' set the direction of the animated object. It has an value called
+'cubic-bezier(). It takes four numeric values separated by comas.
+The animation-timing-function: linear; controls the speed of animated object. It is similar to 
+transition property.

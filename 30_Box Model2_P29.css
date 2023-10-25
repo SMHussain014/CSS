@@ -1,0 +1,37 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-image:url("img/colour_bubble.jpg");
+    background-size:cover;
+}
+.box{
+    width:700px;
+    height:400px;
+    margin:40px auto;
+    border-style:solid;
+    border-width:5px; 
+    border-color:#f00;
+    overflow:auto;
+}
+article{
+    border-style:solid;
+    border-width:3px; 
+    border-color:#00f;
+    margin:40px 30px 20px 10px;
+}
+.box h1, p{
+    margin:20px;
+    padding:10px 0px;
+}
+.box h1{
+    border-left:50px solid green;
+    border-right:20px solid blue;
+    padding:0px 0px 0px 10px;
+}
+.box p{
+    border-left:50px solid green;
+    border-right:20px solid blue;
+    padding:0px 0px 0px 10px;
+}

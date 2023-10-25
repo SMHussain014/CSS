@@ -1,0 +1,15 @@
+Position Properties:
+It has four value, i.e. static, relative, fixed and absolute. Its default value is static. 
+The relative position may be used with attributes, like left, right, top, bottom etc and their
+values in pixels. 
+The fixed position places first division or image onto second one. 
+The absolute position works in relation to both divisions, in such a way that first div remains 
+fixed and well within second div. (In fact, absolute position is used in both divisions)
+
+Z-index Property:
+It is used to display two or more divisions in front and back of each other.
+It has two values, auto (default value) and number value, i.e. 1, 2, 3 etc.
+Note the higher number will be displayed at front.
+It should be used with absolute position property.
+
+Please see CSS Animation by Net Ninja.

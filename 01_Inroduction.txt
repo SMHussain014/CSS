@@ -1,0 +1,51 @@
+What is CSS: Cascading Style Sheet
+Cascading Style Sheet is a markup language use to create style and customize HTML elements 
+available in a web-page.
+
+Why to use CSS and its Benefits:
+One can create more affecting, attractive and customized web-pages in less time with least code.
+Some of its benefits are given below;
+a. Time Saving
+b. Less Coding 
+c. Reduced Page Size
+d. Easy to load
+e. Creative Look
+f. affective Performance
+
+Which tools needed to work with SSC:
+A Structural page to apply SSC
+A Text Editor to write codes
+A Browser to view result 
+
+Types of CSS w.r.t its usage:
+1.  Inline CSS
+2.  In-page or Internal CSS
+3.  Source or External CSS
+
+How to use CSS:
+Inline CSS;
+1.  To use inline CSS, use 'style' attribute in desired tag.
+2.  Write name of property, you want to use, select property and close it; e.g.
+    <h1 style="color:red;">
+
+In-Page CSS:
+3.  To use in-page CSS, use 'style' tag between opening and closing 'head' or 'body' tags.
+4.  It can be used in 'head' or 'body' tags yet its usage in 'body' tag is recommended.
+    For example:
+    <style>
+        h2{
+            color:red;
+            background:green;
+        }
+    </style>
+5.  The 'style' tag has two types or attributes namely 'text' and 'media' which we will study in 
+    upcoming lectures.
+
+    Source CSS;
+6.  To use source CSS, create a file with extension '.scc' and write the code within it like 
+    at S.N.4 above.
+7.  To run CSS, this style-sheet has to be linked with desired HTML file, like:
+    <link rel="stylesheet" type="text/css" href=file_name.css">
+    <link rel="stylesheet" type="media/css" href=file_name.css">
+8.  Note that above inline tag 'link' is written between opening and closing 'head' tags of 
+    HTML file.

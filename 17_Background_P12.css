@@ -1,0 +1,17 @@
+body{
+    background-image:url("img/logo.png"), url("img/colour_bubble.jpg");
+    background-repeat:no-repeat;
+    background-size:200px, cover;
+    background-position:center;
+}
+h1{
+    color:red;
+    border:5px solid green;
+}
+h2{
+    color:white;
+    border:5px solid red;
+}
+p{
+    color:blue;
+}

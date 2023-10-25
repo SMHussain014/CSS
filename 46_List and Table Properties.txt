@@ -1,0 +1,26 @@
+List Properties:
+Properties of Unordered List
+list-style-type (It has four values, i.e. disc(It is default value), none(eliminate disc symbols), 
+circle(creates circle), square(creates square)).
+list-style-position (It has two values, i.e. outside(default value), inside(It gives inner text)).
+list-style-image: url (path of the image);
+Properties of Ordered List
+list-style-type (It has numerous values, i.e. decimal(It is default value), decimal-leading-zero
+(creates zero before decimal numbers), upper-alpha (creates capital letters), lower-alpha 
+(creates small letters), upper-roman, lower-roman, other languages (just type the name of that
+language)).
+list-style-position property can be used in the same way.
+
+Table Properties:
+The table-layout property has three values, i.e. auto (default value), fixed (used with width),
+Note that table-layout:auto:- automatically fixed the width of table as per its content, meaning
+thereby its makes the website responsive and table-layout:fixed permanently fixed the width 
+of a table's cell.
+The border-collapse:collapse; eliminate cell's border, but its default value is separate.
+The border-spacing: 10px; creates space between table's cells (first is column and second a row) 
+The text-align property can be used to adjusted the text of a table.
+The vertical-align property has two values, i.e top and bottom.
+The empty-cells property has only two values hide and show.
+The caption property has two values top and bottom.
+The padding property may also be used which increases extra space within a cell
+The tr:nth-child(odd or even) and tr:hover can also be used in the same way.

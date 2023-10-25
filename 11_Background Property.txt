@@ -1,0 +1,109 @@
+In this lecture, we are about to learn:
+    (i) Background-image
+    (ii) Background-repeat
+    (iii) Background-size
+    (iv) Background-position
+    (v) Inserting multiple images
+    (vi) Inserting an image inside a box
+    (vii) Background-origin
+    (viii) Background-clip
+    (ix) Background-attachment
+
+Background-image
+To use an image as background of a webpage, article and paragraph, we have following techniques:
+    (i) image()
+    (ii) linear-gradient()
+    (iii) radial-gradient()
+    (iv) repeating-linear-gradient()
+    (v) repeating-radial-gradient()
+    (vi) url()
+Firstly, we use option 'url()' to insert an image. It is used for 'body' tag.
+Simply type 'background-image:url();'
+Within these (), just write full path of the image.
+If image's size is small, browser automatically repeats the image.
+if image's size is large, browser automatically drops the extra image.
+
+Background-repeat
+It is used to control the repetition of an image.
+It has five values, i.e. repeat, no-repeat, repeat-x, repeat-y and round.
+Its default value is repeat.
+To stop repetition, use property 'background-repeat:no-repeat;'.
+To get horizontal repetition, use property 'background-repeat:repeat-x;'.
+To get vertical repetition, use property 'background-repeat:repeat-y;'.
+To get an image adjusted within a box, in this case the size of an image enhances automatically, 
+use property 'Background-repeat:round;'.
+To get an image adjusted within a box, in this case the original size of an image remains in 
+contact but the space around that image enhances, use property 'Background-repeat:space;'.
+
+Background-size
+It is used to adjust background-size of an article or webpage.
+It has two values, i.e. cover (for webpage) and contain (for an article)
+To get full background of a webpage, use property 'background-size:cover'.
+In case of a specific size, we have to provide width and height of an image.
+To get specific size in pixels, use property 'background-size:500px 500px'.
+To get specific size in percentage, use property 'background-size:50% 50%'.
+To get background of a box or specific enclosed area where we want to insert an image, use property 
+'Background-size:contain;'.
+
+Inserting Multiple images
+We can insert multiple images at the same time, like 
+background-image:url("C:/Gallery/colour_bubble.jpg"),
+                 url("C:/Gallery/water_molecule_chemistry.jpg"), 
+                 url("C:/Gallery/water_molecule_graphical.jpg"), 
+                 url("C:/Gallery/water_molecule_picture.jpg");
+However, these images will be repeated automatically.
+To overcome this difficulty, use property 'background-repeat:no-repeat;'.
+Now, all images will be placed above each and other.
+To adjust size of these images, provide width and height for that use property 
+'background-size:300px 300px'.
+Yet, the position of these images towards x-axis and y-axis is to be defined.
+To get x-axis position, use property 'background-position:0px 0px, 200px 0px, 400px 0px, 600px 0px'.
+To get y-axis position, use property 'background-position:0px 0px, 0px 200px, 0px 400px, 0px 600px'.
+
+Background-position
+The background-position is used to control the position of an image.
+It can be used in pixels like:
+for x-axis 'background-position:0px 0px, 200px 0px;' and 
+for y-axis 'background-position:0px 0px, 0px 200px;'
+It can be used in percentage, as well, like
+for x-axis 'background-position:0% 0%, 100% 0%;' and 
+for y-axis 'background-position:0% 0%, 0% 100%;'
+It can be adjusted as per your need by using properties like, left, right, top, bottom, centre, 
+top left, top right, top centre, bottom left, bottom right, bottom centre, left centre, 
+right centre etc.
+Its default position is top left.
+
+Background-origin
+This property is used for an image contained in a box.
+It has three values namely padding-box, border-box, content-box.
+To get image of a box from its padding, use property 'background-origin:Padding-box;'.
+(This is default property)
+To get image of a box from its border, use property 'background-origin:border-box;'.
+To get image of a box behind its content, use property 'background-origin:content-box;'.
+
+Background-clip
+This property is used for background color contained in a box.
+It has also three values namely padding-box, border-box, content-box.
+To get color of a box from its border, use property 'background-clip:border-box;'.
+(This is default property)
+To get color of a box from its padding, use property 'background-clip:Padding-box;'.
+To get color of a box behind its content, use property 'background-clip:content-box;'.
+
+Background-attachment
+This property is used to have control over (i) the background image and the content of the page; and 
+(ii) the enclosed image and content of a box.
+It has three values namely fixed, scroll and local.
+The values, i.e. scroll and fixed, are used for background image.
+The value, i.e. local, is used for enclosed image within a box.
+To get the background image scroll with the content of page, use property 'background-attachment:scroll;'.
+(This is default property)
+To get the background image fixed and scroll the text only, use property 'background-attachment:fixed;'.
+To fix the content within a box, use property 'overflow:auto'.
+To get the image scroll within a box, use property 'background-attachment:local;'.
+(It is fixed by default)
+
+Background-linear-gradient() and background-repeating-linear-gradient()
+The smooth combination of two or more colors is called gradient. 
+Linear Gradient produces horizontal design. Repeating Linear Gradient produces diagonal design.
+It can be joined in the value of background-color value.
+The details of which will be discussed later on.

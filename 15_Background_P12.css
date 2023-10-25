@@ -1,0 +1,22 @@
+body{
+    background-image:url("img/colour_bubble.jpg"), 
+                     url("img/water_molecule_chemistry.jpg"), 
+                     url("img/water_molecule_graphical.jpg"), 
+                     url("img/water_molecule_picture.jpg");
+    background-size:200px 200px;
+    background-repeat:no-repeat;
+    background-position:0px 0px, 200px 0px, 400px 0px, 600px 0px;
+}
+h1{
+    color:red;
+    background:yellow;
+    border:5px solid green;
+}
+h2{
+    color:white;
+    background:blue;
+    border:5px solid red;
+}
+p{
+    color:blue;
+}
