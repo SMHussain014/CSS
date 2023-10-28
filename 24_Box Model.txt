@@ -6,6 +6,11 @@ The third thing is border itself.
 Margin is the space outside border around all four sides.
 The size of a box is equal to the size of content box, both sides of padding & border.
 
+Box-Size Property:
+Box-size controls the over-all size of Box Model. If not used, it will cause to enhance the size
+of Box Model by adding content, padding, border and margin. It should be equal to border-box to
+avoid complications.
+
 Border Properties
 The following is the list of some border properties:
 (i) Border-style

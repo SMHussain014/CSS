@@ -18,4 +18,4 @@ Types of Color Property w.r.t. their usage
         Write 'RGBA(000, 000, 000, 0.3)'
         Color Range: 1-255; Start from 'Black' color and Ends with 'White' color
         Transparency Range: 0-1.0
-    (e) By HSLA
+    (e) By HSL/HSLA

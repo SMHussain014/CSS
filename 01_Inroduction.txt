@@ -3,14 +3,14 @@ Cascading Style Sheet is a markup language use to create style and customize HTM
 available in a web-page.
 
 Why to use CSS and its Benefits:
-One can create more affecting, attractive and customized web-pages in less time with least code.
+We can create more affecting, attractive and customized web-pages in less time with least code.
 Some of its benefits are given below;
 a. Time Saving
 b. Less Coding 
 c. Reduced Page Size
 d. Easy to load
 e. Creative Look
-f. affective Performance
+f. Affective Performance
 
 Which tools needed to work with SSC:
 A Structural page to apply SSC

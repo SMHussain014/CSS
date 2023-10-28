@@ -1,10 +1,17 @@
 Position Properties:
-It has four value, i.e. static, relative, fixed and absolute. Its default value is static. 
-The relative position may be used with attributes, like left, right, top, bottom etc and their
-values in pixels. 
-The fixed position places first division or image onto second one. 
-The absolute position works in relation to both divisions, in such a way that first div remains 
-fixed and well within second div. (In fact, absolute position is used in both divisions)
+It has four value, i.e. static, relative, fixed and absolute. Its default value is static.
+These values have four attributes, like left, right, top, bottom (used in pixels).
+To use this property, we have to make a parent division and within that its child divisions.
+The relative position works as per its parent division.
+The fixed position places a division onto a fixed position and it works as per root or HTML. 
+The absolute position works in relation to parent-child divisions, in such a way that parent 
+division remains fixed (if its position is set to 'relative') and well within that absolute 
+position of child is set. (In fact, absolute position is used in both divisions). 
+If parent division is not set to relative, it works as per whole page, i.e. HTML or root.
+
+Sticky Position:
+It can be used in nav tag like that 'position:Sticky; and top:-5px;'. 
+It will freeze the nav tag at that position.
 
 Z-index Property:
 It is used to display two or more divisions in front and back of each other.

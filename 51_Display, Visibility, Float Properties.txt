@@ -1,0 +1,49 @@
+Block Elements:
+These take full space of a line till end of page as per screen size.
+The following are the examples of block elements; paragraphs, headings, lists, forms, divisions.
+
+Inline Elements:
+These take only require space and break the line, like anchor tag, table, span.
+We can not enhance the width and height of a inline element. But left and right margin be fixed.
+
+Inline-Block Elements:
+These act like inline elements but their width and height may be fixed, like image.
+
+Display Properties:
+none (hides an element), block (converts inline element into block 
+element), inline (converts block element into inline element), 
+inline-block (an inline element acts like a block but not show block 
+property), list-item (creates unordered list), inherit (inherent properties 
+of its parents), initial (restore default property of its own), content,
+grid, flex (set all division in a line), inline-grid, inline-flex (erase 
+extra space of a division), run-in, table, inline-table, 
+table-caption, table-cell, table-row, table-column, table-row-group, 
+table-column-group, table-header-group, table-footer-group etc.
+
+Visibility Properties
+Display Property removes an element from the web-page, so layout of the 
+page is twisted but Visibility property keeps the white space and keep the 
+layout intact. It has three values, i.e. hidden, collapse (used on table)
+and visible.
+
+Cursor Properties:
+cursor: value of cursor;
+These are the some cursor positions: wait, not-allowed, zoom-in,
+zoom-out, grabbing, help, default, no-drop, copy, move, none, text, grab,
+url, alias, pointer, progress, auto, cell, all-scroll, context-menu etc.
+
+Overflow Property:
+This property controls the flow of content of a Box Model. It has four values, like 
+visible (default), hidden (hides the overflowed content & no more visible), scroll (shows scroll)
+and auto (do scroll but scroll bar is not visible).
+
+Float Property:
+It is used to give position to various elements, present in a single division.
+Specially, it is used with images. Do not use for setting layout of web-page.
+If you want space between image and the content, always provide padding to the left of image.
+It has only four values, i.e. none (default), inherit (inherit from parent), left and right.
+
+Clear Property:
+It is used to give position to various elements, present in a single division.
+Specially, it is used with content. Do not use for setting layout of web-page.
+It has only five values, i.e. none (default), inherit (inherit from parent), left, right & both.
