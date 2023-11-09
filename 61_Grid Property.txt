@@ -71,7 +71,7 @@ two lines of a box.
 
 Grid-Area (For grid-child):
 With this property, we can operate grid-column and grid-row at the same time, like 
-grid-area: 1 / 1 / 3 / 3;
+grid-area: 1 / 1 / 3 / 3; It works row-column wise, i.e. RC.
 
 Grid-Template-Area (For grid-container)
 It can be used in place of 'grid-template-columns' like that
@@ -79,3 +79,4 @@ grid-template-area: "hr hr hr hr"
                     "sbr main main main"
                     "sbr main main main"
                     "ft ft ft ft";
+After that give these names to respective boxes by using grid-area property.
